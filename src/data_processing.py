@@ -6,7 +6,7 @@ import seaborn as sns
 
 def load_data():
 
-    df = pd.read_csv(r"D:\datasets\WA_Fn-UseC_-Telco-Customer-Churn.csv")
+    df = pd.read_csv("data/Telecom_customer churn.csv")
 
     print(df.columns)
     print(df.shape)
