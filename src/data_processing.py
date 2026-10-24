@@ -12,7 +12,9 @@ def load_data():
     print(df.shape)
     print(df.head())
     print(df.info())
-    print(df["Churn"].value_counts())
+    # print(df["Churn"].value_counts())
+    print(df.columns.tolist())
+    print(df.head())
 
     # TotalCharges ko number mein convert karo
     df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
